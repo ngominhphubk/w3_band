@@ -15,8 +15,28 @@ background-color: #000;
 color: #fff;
 height: 46px;
 }
+#header .search-button {
+	float: right;
+	padding: 0 21px;
+}
+#header .search-button:hover {
+	color: #fff;
+	background-color: #f44336;
+	cursor: pointer;
+}
+#header .search-icon {
+	color: #fff;
+	font-size: 20px;
+	line-height: 46px;
+}
+#nav {
+	display: inline-block;
+}
 #nav, .sub_nav {
 list-style-type: none;
+}
+#nav .nav-arrow-down {
+	font-size: 14px;
 }
 #nav >li {
 	display: inline-block;
