@@ -7,12 +7,63 @@
 html {
 	font-family: Arial, Helvetica, sans-serif;
 }
+	/* common */
+.pull-right {
+	float:right;
+}
+.btn:hover {
+	background-color: #ccc;
+	color: #000;
+	cursor: pointer;
+}
+.btn{
+	background-color: #000;
+	color: #fff;
+	text-decoration: none;
+	padding: 11px 16px;
+	display: inline-block;
+	margin-top: 15px;
+	border: none;
+}
+.mt-8 {
+	margin-top: 8px !important;
+}
+.mt-16 {
+	margin-top: 16px !important;
+}
+.text-align-center {
+	text-align: center !important;
+}
+.row {
+margin-left: -8px;
+margin-right: -8px;
+}
+.row::after {
+	content: "";
+	display: block;
+	clear:both;
+}
+.col {
+	float: left;
+	padding-left: 8px;
+	padding-right: 8px;
+}
+.col-full {
+	width: 100%;
+}
+.col-half {
+	width: 50%;
+}
+.col-3 {
+	width: 33.3333%;
+}
 .text-white {
 	color:#fff !important;
 }
 .clear {
 	clear: both;
 }
+	/* MAIN */
 #main {
 
 }
@@ -112,7 +163,7 @@ list-style-type: none;
 }
 #content .content-section {
 	width: 800px;
-	padding: 64px 0;
+	padding: 64px 0 112px;
 	margin-left: auto;
 	margin-right: auto;
 
@@ -138,11 +189,6 @@ list-style-type: none;
 } 
 #content .member-list {
 	margin-top: 48px;
-}
-#content .member-item {
-	float: left;
-	width: 33.33333%;
-	text-align: center;
 }
 #content .member-name {
 	font: 15px;
@@ -184,29 +230,75 @@ list-style-type: none;
 	margin-top: -3px;
 }
 .place-list {
-
-}
-.place-item {
-
+	margin-top: 32px;
 }
 .place-image {
-
+	width: 100%;
+	display: block;
+}
+.place-image:hover {
+	opacity: 0.6;
 }
 .place-body {
+	background-color: #fff;
+	font-size: 15px;
+	padding: 16px;
 
 }
 .place-heading {
-
+	font-size: 15px;
+	font-weight: 550;
 }
 .place-time {
-
+	margin-top: 15px;
+	color: #757575;
 }
 .place-desc {
-
+	margin-top: 15px;
+	line-height: 1.4;
 }
-.place-by-tickets {
 
+
+
+/* contact */	
+.contact-content {
+	margin-top: 48px;
+}
+.contact-info {
+	font-size: 18px;
+	line-height: 1.5;
+}
+.contact-info i[class*=ti-] {
+	width: 30px;
+	display: inline-block;
+}
+.contact-form {
+	font-size: 15px;
+}
+.contact-form .form-control {
+	padding: 10px;
+	border: 1px solid #ccc;
+	width: 100%;
+}
+.map-section img {
+	width: 100%;
 }
 #footer {
-
+	padding: 64px 16px;
+	text-align: center;
+}
+#footer .social-list {
+	font-size: 24px;
+}
+#footer .social-list a {
+	color: rgba(0, 0, 0, 0.6);
+	text-decoration: none;
+}
+#footer .copy-right a {
+	margin-top: 15px;
+	color: rgba(0, 0, 0, 0.6)
+}
+#footer .copy-right a:hover,
+#footer .social-list a:hover {
+	color: rgba(0, 0, 0, 0.4);
 }
